@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Manrope', sans-serif;
+  --font-serif: 'Cormorant Garamond', serif;
+
+  --color-brand-50: #F9F9F7;
+  --color-brand-100: #F0F0EB;
+  --color-brand-200: #E2E2D5;
+  --color-brand-300: #C5C5B5;
+  --color-brand-400: #A3A390;
+  --color-brand-500: #858570;
+  --color-brand-600: #656555;
+  --color-brand-700: #4A4A40;
+  --color-brand-800: #2E2E28;
+  --color-brand-900: #1A1A15;
+  --color-brand-gold: #D4AF37;
+
+  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-grain: grain 8s steps(10) infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes grain {
+    0%, 100% { transform: translate(0, 0); }
+    10% { transform: translate(-5%, -10%); }
+    20% { transform: translate(-15%, 5%); }
+    30% { transform: translate(7%, -25%); }
+    40% { transform: translate(-5%, 25%); }
+    50% { transform: translate(-15%, 10%); }
+    60% { transform: translate(15%, 0%); }
+    70% { transform: translate(0%, 15%); }
+    80% { transform: translate(3%, 35%); }
+    90% { transform: translate(-10%, 10%); }
+  }
+}
